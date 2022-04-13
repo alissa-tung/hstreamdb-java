@@ -54,14 +54,6 @@ public interface HStreamClient extends AutoCloseable {
   void deleteStream(String stream);
 
   /**
-   * Delete the specified stream with streamName.
-   *
-   * @param stream the name of stream
-   * @param forced the flag whether to enable forced deletion
-   */
-  void deleteStream(String stream, boolean forced);
-
-  /**
    * List all streams.
    *
    * @return a list of {@link Stream}s
