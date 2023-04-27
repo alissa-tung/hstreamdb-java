@@ -270,7 +270,8 @@ open class HServerMock(
                 .addShards(
                     Shard.newBuilder()
                         .setStreamName(streamName)
-                        // TODO: add more fields
+                        .setStartHashRangeKey("000000000000000000000000000000000000000")
+                        .setEndHashRangeKey("999999999999999999999999999999999999999")
                         .build()
                 )
                 .build()
